@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% block contenido %}
+
+{% load static %}
+<link href="{% static  'css/styles.css' %}" rel="stylesheet" />
+
+<title>Shinobi Clothing</title>
+
+<div class="estructura">
+
+    <h2 class="tituloShinobi">ARTICULOS // <span class="tituloJapo" >記事</span></h2>
+
+
+    <table class="table table-striped">
+        <thead class="tabla">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Categoria</th>
+                <th>Precio</th>
+                <th>Disponibilidad</th>
+            </tr>
+        </thead>
+        <tbody class="tabla2">
+        {% for a in articulos  %}
+            <tr>
+                <td>{{ a.id }}</td>
+                <td>{{ a.nombre }}</td>
+                <td>{{ a.categoria }}</td>
+                <td>{{ a.precio }}</td>
+                <td>{{ a.disponibilidad }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock contenido %}

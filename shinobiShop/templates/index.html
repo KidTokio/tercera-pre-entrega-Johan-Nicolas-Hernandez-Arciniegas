@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+{% block contenido %}
+
+{% load static %}
+<link href="{% static  'css/styles.css' %}" rel="stylesheet" />
+
+<title>Shinobi Clothing</title>
+
+<div class="estructura">
+    
+    <div class="showcase">
+        
+    <div class="imageContainer">
+        <img src="{% static 'images/model1.jpg' %}" alt="Usuario" class="image">
+        <div class="overlay1">
+            <p>ENCUENTRA TU<br>ESTILO</p>
+        </div>
+        <div class="overlay">
+            <p class="overlayText">ENCUENTRA TU<br>ESTILO</p>
+        </div>
+    </div>
+
+    <div class="imageContainer">
+        <img src="{% static 'images/model2.jpg' %}" alt="Usuario" class="image">
+        <div class="overlay1">
+            <p>VISTE A TU<br>MANERA</p>
+        </div>
+        <div class="overlay">
+            <p class="overlayText">VISTE A TU<br>MANERA</p>
+        </div>
+    </div>
+
+    <div class="imageContainer">
+        <img src="{% static 'images/model3.jpg' %}" alt="Usuario" class="image">
+        <div class="overlay1">
+            <p>SE ORIGINAL<br>SE SHINOBI</p>
+        </div>
+        <div class="overlay">
+            <p class="overlayText">SE ORIGINAL<br>SE SHINOBI</p>
+        </div>
+    </div>
+    </div>
+
+    <h2 class="tituloShinobi">TENDENCIAS SHINOBI // <span class="tituloJapo" >忍の傾向</span></h2>
+
+    <div class="clothShowcase">
+
+    <div class="clothCard">
+        <img class="clothPic" src="{% static 'images/camiseta.jpg' %}" class="image">
+        <h5 class="nombreShinobi">POLERA ONI LUNAR</h5>
+        <h5>$14.900</h5>
+    </div>
+
+    <div class="clothCard">
+        <img class="clothPic" src="{% static 'images/jacket.jpg' %}" class="image">
+        <h5 class="nombreShinobi">PARCA BIOHAZARD</h5>
+        <h5>$32.900</h5>
+    </div>
+
+    <div class="clothCard">
+        <img class="clothPic" src="{% static 'images/pantalon.jpg' %}" class="image">
+        <h5 class="nombreShinobi">PANTALON W.RUSH</h5>
+        <h5>$14.900</h5>
+    </div>
+
+    <div class="clothCard">
+        <img class="clothPic" src="{% static 'images/gorro.jpg' %}" class="image">
+        <h5 class="nombreShinobi">GORRO KASA</h5>
+        <h5>$9.900</h5>
+    </div>
+
+    </div>
+
+    <h2 class="tituloShinobi">FORMULARIOS SHINOBI // <span class="tituloJapo" >形状</span></h2>
+
+    <div class="botonesFormularios">
+        <a class="botonShinobi" href="/cliente_form">Formulario clientes</a>
+        <a class="botonShinobi" href="/usuario_form">Formulario usuarios</a>
+        <a class="botonShinobi" href="/articulo_form">Formulario articulos</a>
+    </div>
+
+    <div class="botonesFormularios">
+        <a class="botonShinobi" href="/ver_clientes">Ver clientes</a>
+        <a class="botonShinobi" href="/ver_usuarios">Ver usuarios</a>
+        <a class="botonShinobi" href="/ver_articulos">Ver articulos</a>
+    </div>
+
+    <div class="botonesFormularios">
+        <a class="botonShinobiBuscar" href="/buscar">Buscar articulos</a>
+    </div>
+
+    
+</div>
+
+{% endblock contenido %}

@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% block contenido %}
+
+{% load static %}
+<link href="{% static  'css/styles.css' %}" rel="stylesheet" />
+
+<title>Shinobi Clothing</title>
+
+<div class="estructura">
+
+    <h2 class="tituloShinobi">USUARIO CREADO CON EXITO // <span class="tituloJapo" >ユーザー</span></h2>
+
+
+    <table class="table table-striped">
+        <thead class="tabla">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Clave</th>
+                <th>Numero</th>
+                <th>Direccion</th>
+            </tr>
+        </thead>
+        <tbody class="tabla2">
+        {% for u in usuarios  %}
+            <tr>
+                <td>{{ u.id }}</td>
+                <td>{{ u.nombre }}</td>
+                <td>{{ u.apellido }}</td>
+                <td>{{ u.email }}</td>
+                <td>{{ u.clave }}</td>
+                <td>{{ u.numero }}</td>
+                <td>{{ u.direccion }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+{% endblock contenido %}

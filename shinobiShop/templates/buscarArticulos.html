@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block contenido %}
+
+{% load static %}
+<link href="{% static  'css/styles.css' %}" rel="stylesheet" />
+
+<title>Shinobi Clothing</title>
+
+<div class="estructura">
+
+    <h2 class="tituloShinobi">BUSCAR ARTICULOS // <span class="tituloJapo" >記事</span></h2>
+
+    <div class="buscarDiv">
+    <form class="buscar" action="{% url 'encontrar_articulo' %}" method="get">
+        {% csrf_token %}
+        <input type="text" name="buscar" id="buscar" placeholder="Buscar articulos">
+        <input type="submit" value="Buscar">
+    </form>
+    </div>
+
+</div>
+
+{% endblock contenido %}
