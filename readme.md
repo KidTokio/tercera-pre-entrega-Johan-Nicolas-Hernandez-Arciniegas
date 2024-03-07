@@ -1,6 +1,5 @@
 ## 📑 3RA PRE ENTREGA
-**Johan Nicolas Hernández Arciniegas**
-**Coderhouse - Python #50215**
+**Johan Nicolas Hernández Arciniegas** // **Coderhouse - Python #50215**
 
 **👕 SHINOBI STREETWEAR** // Shinobi es la simulacion de una tienda de ropa online
 
