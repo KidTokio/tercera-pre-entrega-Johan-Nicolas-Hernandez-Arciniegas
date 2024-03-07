@@ -20,3 +20,6 @@ Tambien se puede acceder a ellos mediante las urls
 - /articulo_form
 - /ver_articulos
 - /buscar
+
+## SHOWCASE
+![enter image description here](https://i.imgur.com/S0F0HhF.png)
